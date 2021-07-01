@@ -16,7 +16,7 @@
 
     'no_perms_general': '''Aktion verboten! Stelle bitte sicher, dass ich die korrekten Permissions habe.''',
 
-    'no_perms_managed': '''Du benötigst die `Nachrichten verwalten` Permssions oder Rollen-Rechte um Erinnerungen zu diesem Channel hinzuzufügen. Bitte spreche mit deinem Administrator, und frage ihn, den `{prefix}restrict` Befehl zu nutzen und deine Rolle hinzuzufügen.''',
+    'no_perms_managed': '''Du benötigst die `Nachrichten verwalten` Permissions oder Rollen-Rechte, um Erinnerungen zu diesem Channel hinzuzufügen. Bitte spreche mit deinem Administrator, und frage ihn, den `{prefix}restrict` Befehl zu nutzen und deine Rolle hinzuzufügen.''',
 
     'no_perms_restricted': '''Du benötigst mindestens das Permissions-Level `Server verwalten` um diesen Befehl zu verwenden.''',
 
@@ -28,20 +28,20 @@
 
             '$look [n] [Kanal] [aktiviert]': 'Zeige alle Erinnerungen in einem Kanal an. Wenn <code>n</code> angegeben ist, werden nur die nächsten n Erinnerungen angezeigt. Wenn <code>enabled</code> angegeben ist, werden nur aktivierte Erinnerungen angezeigt.',
 
-            '$remind [User/Kanal] <Zeit-bis-zur-Errinnerung> <Nachricht>': 'Verwende lieber <code>$natural</code> als diesen Befehl. Dieser Befehl benötigt eine Zeitangabe im folgendem Format: [num][s/m/h/d]. (Beispiel: 10s für 10 Sekunden oder 2s10m für 2 Sekunden und 10 Minuten. Eine exakte Zeit kann durch <code>day/month/year-hour:minute:second</code> angegeben werden.',
+            '$remind [User/Kanal] <Zeit-bis-zur-Erinnerung> <Nachricht>': 'Verwende lieber <code>$natural</code> als diesen Befehl. Dieser Befehl benötigt eine Zeitangabe im folgendem Format: [num][s/m/h/d]. (Beispiel: 10s für 10 Sekunden oder 2s10m für 2 Sekunden und 10 Minuten. Eine exakte Zeit kann durch <code>day/month/year-hour:minute:second</code> angegeben werden.',
 
-            '$interval [User/Kanal] <Zeit-bis-zur-Errinnerung> <Interval> <Nachricht>': '<strong><a href="https://patreon.com/jellywx/">Nur für Patron.</a></strong> Verwende lieber <code>$natural</code> als diesen Befehl. Setzt eine, sich wiederholende, Erinnerung welche in <code>Zeit-bis-zur-Errinnerung</code>. Verwendet das oben angegebende Intervall, z.B. <code>$interval 0s 20m Hallo Welt!</code> wird jede 20 Minuten \'Hallo Welt!\' in deinen Kanal senden.',
+            '$interval [User/Kanal] <Zeit-bis-zur-Erinnerung> <Interval> <Nachricht>': '<strong><a href="https://patreon.com/jellywx/">Nur für Patron.</a></strong> Verwende lieber <code>$natural</code> als diesen Befehl. Setzt eine, sich wiederholende, Erinnerung welche in <code>Zeit-bis-zur-Errinnerung</code>. Verwendet das oben angegebende Intervall, z.B. <code>$interval 0s 20m Hallo Welt!</code> wird jede 20 Minuten \'Hallo Welt!\' in deinen Kanal senden.',
 
             '$offset': 'Verschiebt alle Erinnerungen eines Server\'s um eine bestimmte Zeit. (Hilft u.a. bei der Zeitumstellung)'}],
 
         ['''Management Commands''', {
-            '$timezone': 'Setzt die Server Zeitzone, für einfache zeitbasierte Erinnerungen.',
+            '$timezone': 'Setzt die Server Zeitzone für einfache zeitbasierte Erinnerungen.',
 
             '$lang <name>': 'Ändert die Sprache.',
 
             '$nudge <time>': 'Aktiviert anstoßen für den derzeitigen Kanal. So können zukünftige Erinnerungen sekundengenau synchronisiert werden.',
 
-            '$restrict [Rolle] [Befehl]': 'Ändert, welche Rollen, welche Befehle verwenden dürfen.',
+            '$restrict [Rolle] [Befehl]': 'Ändert, welche Rollen welche Befehle verwenden dürfen.',
 
             '$blacklist [Kanal]': 'Blockiert oder hebt die Blockierung eines Kanals auf. Wenn ein Kanal blockiert ist, können dort keine Befehle mehr verwendet werden.',
 
@@ -278,9 +278,9 @@ Benutze:
         'invalid': '''Sprachen:
 {}''',
 
-        'set': '''Serversprache wurde zu Deutsch gesetzt.''',
+        'set': '''Serversprache wurde auf Deutsch gesetzt.''',
 
-        'set_p': '''Persönliche Sprache zu Deutsch gesetzt.''',
+        'set_p': '''Persönliche Sprache auf Deutsch gesetzt.''',
     },
 
     'clock': {
@@ -309,11 +309,11 @@ Benutze:
 
     'timer': {
 
-        'limit': '''Du hast bereits 25 Timer. Bitte lösche eine um eine eine neue zu erstellen.''',
+        'limit': '''Du hast bereits 25 Timer. Bitte lösche einen, um einen neuen zu erstellen.''',
 
         'name_length': '''Der Name des Timers ist zu lang (Maximal sind 32 Zeichen erlaubt, du verwendest aber {})''',
 
-        'unique': '''Bitte geben deinen Timer einen eindeutigen Namen''',
+        'unique': '''Bitte gebe deinem Timer einen eindeutigen Namen''',
 
         'success': '''Neuer Timer erstellt''',
 
